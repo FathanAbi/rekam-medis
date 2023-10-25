@@ -13,6 +13,7 @@
                     <br><br>
                     @if(auth()->check())
                     <li><a style="background-color: red;" href="{{ route('form.medis') }}">Form Medis</a></li>
+                    <li><a style="background-color: red;" href="{{ route('rekam.medis') }}">Rekam medis</a></li>
                     @endif
                     
                 </div>
