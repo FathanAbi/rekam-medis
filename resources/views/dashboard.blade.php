@@ -10,6 +10,11 @@
             <div class="bg-white dark:bg-gray-800 overflow-hidden shadow-sm sm:rounded-lg">
                 <div class="p-6 text-gray-900 dark:text-gray-100">
                     {{ __("You're logged in!") }}
+                    <br><br>
+                    @if(auth()->check())
+                    <li><a style="background-color: red;" href="{{ route('form.medis') }}">Form Medis</a></li>
+                    @endif
+                    
                 </div>
             </div>
         </div>
